@@ -59,7 +59,7 @@ get_header();
                             <li>Client-Focused</li> 
                             <li>Client-Centric Approac</li>     
                         </ul>
-                        <a href="about-us.html" class="arrow-btn"><i class="fas fa-arrow-right"></i></a>
+                        <a href="about" class="arrow-btn"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

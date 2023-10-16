@@ -17,7 +17,7 @@ get_header();
                     <span class="medium">Completed Projects</span>
                 </div>
                 <div class="thumb">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/800x800.png" alt="Image Not Found">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/digital_girl.png" alt="Image Not Found">
                 </div>
             </div>
             <div class="col-lg-7">
@@ -25,7 +25,7 @@ get_header();
                     <h2>Refine Your Digital Product Design.</h2>
                     <p>Creating Fast, Responsive, and SEO-Optimized Websites at an Affordable Price to Ensure Your
                         Business's Discoverability on Google and Other Search Engines.</p>
-                    <a class="btn-animation mt-30" href="services.html"><i class="fas fa-arrow-right"></i> <span>Our
+                    <a class="btn-animation mt-30" href="services"><i class="fas fa-arrow-right"></i> <span>Our
                             Services</span></a>
                 </div>
             </div>
@@ -134,7 +134,7 @@ get_header();
 <!-- Start About 
     ============================================= -->
 <div class="about-style-two-area relative">
-    <div class="about-style-two-thumb" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/img//2440x1578.png);">
+    <div class="about-style-two-thumb" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/img/yogee_media_web.png);">
         <div class="experience-style-one">
             <div class="video-button">
                 <a href="#" class="video-play-button light">
@@ -165,13 +165,11 @@ get_header();
     </div>
 </div>
 <!-- End About -->
-
-<?php if (get_field('clients')) : ?>
-    <!-- Start Brand Area 
+<!-- Start Brand Area 
     ============================================= -->
-
+<?php if (get_field('clients')) : ?>
     <div class="brand-area relative default-padding overflow-hidden brand-style-two-area">
-        <div class="brand-style-one py-5">
+        <div class="brand-style-one pt-5">
             <div class="container-fill">
                 <div class="row">
                     <div class="col-lg-12">
@@ -203,9 +201,8 @@ get_header();
             </div>
         </div>
     </div>
-    <!-- End Bradn Area -->
 <?php endif; ?>
-
+<!-- End Bradn Area -->
 <!-- Start Team Members 
     ============================================= -->
 <!-- <div class="team-style-one-area bg-cover default-padding bottom-less"
@@ -356,9 +353,55 @@ get_header();
         </div>
     </div> -->
 <!-- End Team Members -->
-<?php if (get_field('testimonials')) : ?>
-    <!-- Start Testimonial Area 
+
+<!-- Start Clients Area
     ============================================= -->
+<div class="clietns-area default-padding-bottom bg-dark-secondary text-light">
+    <div class="container">
+        <div class="client-items">
+            <div class="row align-center">
+                <div class="col-lg-5">
+                    <h5>Join over 40,000 businesses worldwide.</h5>
+                    <h2 class="title">Working great with top platforms</h2>
+                    <a class="btn mt-25 btn-gradient btn-sm" href="contact-us">Join with Us</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="client-item-box">
+                        <div class="partner-box">
+                            <div class="item">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/atlassian.png" alt="Image Not Found">
+                            </div>
+                            <div class="item">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/figma.png" alt="Image Not Found">
+                            </div>
+                            <div class="item">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/react.png" alt="Image Not Found">
+                            </div>
+                            <div class="item">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icon/wordpress.png" alt="Image Not Found">
+                            </div>
+                        </div>
+                        <div class="partner-box">
+                            <div class="item">
+                                <i class="fab fa-digital-ocean"></i>
+                            </div>
+                            <div class="item">
+                                <i class="fab fa-reddit"></i>
+                            </div>
+                            <div class="item">
+                                <i class="fab fa-dropbox"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Clients Area -->
+<!-- Start Testimonial Area 
+    ============================================= -->
+<?php if (get_field('testimonials')) : ?>
     <div class="testimonial-style-one-area default-padding-top">
 
         <div class="container">
@@ -454,8 +497,9 @@ get_header();
         </div>
 
     </div>
-    <!-- End Testimonial Area -->
 <?php endif; ?>
+<!-- End Testimonial Area -->
+
 <!-- Start Prjoect 
     ============================================= -->
 <div class="project-style-one-area default-padding bg-gray">
@@ -578,7 +622,7 @@ get_header();
                         <div class="left">
                             <h4>Rank High on Google</h4>
                             <span>15 Days Free Trial</span>
-                            <a class="btn mt-25 btn-sm circle btn-border light" href="contact-us.html">Order Now</a>
+                            <a class="btn mt-25 btn-sm circle btn-border light" href="contact-us">Order Now</a>
                         </div>
                         <div class="right">
                             <ul>
@@ -593,7 +637,7 @@ get_header();
                         <div class="left">
                             <h4>Email-based Advertising</h4>
                             <span>7 Days Free Trial</span>
-                            <a class="btn mt-25 btn-sm circle btn-border light" href="contact-us.html">Order Now</a>
+                            <a class="btn mt-25 btn-sm circle btn-border light" href="contact-us">Order Now</a>
                         </div>
                         <div class="right">
                             <ul>
@@ -608,7 +652,7 @@ get_header();
                         <div class="left">
                             <h4>Email-based Advertising</h4>
                             <span>7 Days Free Trial</span>
-                            <a class="btn mt-25 btn-sm circle btn-border light" href="contact-us.html">Order Now</a>
+                            <a class="btn mt-25 btn-sm circle btn-border light" href="contact-us">Order Now</a>
                         </div>
                         <div class="right">
                             <ul>
@@ -647,6 +691,8 @@ get_header();
             $args = array(
                 'post_type' => 'post', // You can change this to your custom post type if needed
                 'posts_per_page' => 2, // Number of posts to display
+                'orderby'        => 'date', // Order by date
+                'order'          => 'ASC',
             );
             $query = new WP_Query($args);
 

@@ -37,6 +37,8 @@ get_header();
             // Define the custom query
             $args = array(
                 'post_type' => 'post', // You can change this to your custom post type if needed
+                'paged'     => $paged,
+                'posts_per_page' => 6,
             );
             $query = new WP_Query($args);
 
@@ -85,9 +87,18 @@ get_header();
                     <!-- End Single Item -->
 
             <?php
-                endwhile;
-                wp_reset_postdata(); // Reset post data after the loop
-            endif;
+                 endwhile;
+
+                 // Output pagination
+                 echo '<div class="pagination">';
+                 echo paginate_links(array(
+                     'total'   => $query->max_num_pages,
+                     'current' => max(1, get_query_var('paged')),
+                 ));
+                 echo '</div>';
+         
+                 wp_reset_postdata(); // Reset post data after the loop
+             endif;
             ?>
 
         </div>
