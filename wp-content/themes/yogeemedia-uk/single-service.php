@@ -59,6 +59,23 @@ get_header();
                                 <div class="content">
                                     <h3>Included Services</h3>
                                     <ul class="feature-list-item">
+
+                                        <?php
+
+                                        // check if the repeater field has rows of data
+                                        if (have_rows('homepage_points')) :
+
+                                            // loop through the rows of data
+                                            while (have_rows('homepage_points')) : the_row();
+                                        ?>
+                                                <li><?php the_sub_field('point'); ?></li>
+                                        <?php
+                                            endwhile;
+
+                                        endif;
+
+                                        ?>
+
                                         <?php
                                         // Check rows existexists.
                                         if (have_rows('included_services')) :
@@ -74,16 +91,16 @@ get_header();
                                     </ul>
                                 </div>
                             </div>
-                            <?php if(get_field('the_challange')) :
+                            <?php if (get_field('the_challange')) :
                             ?>
-                            <div class="col-lg-7 col-md-6 mt-xs-30">
-                                <div class="content">
-                                    <h3>The Challange</h3>
-                                    <p>
-                                        <?php the_field('the_challange'); ?>
-                                    </p>
+                                <div class="col-lg-7 col-md-6 mt-xs-30">
+                                    <div class="content">
+                                        <h3>The Challange</h3>
+                                        <p>
+                                            <?php the_field('the_challange'); ?>
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
                             <?php endif;
                             ?>
                         </div>
@@ -101,6 +118,8 @@ get_header();
                             $args = array(
                                 'post_type' => 'service', // Assuming 'services' is the name of your custom post type
                                 'posts_per_page' => -1, // Adjust the number of posts to display
+                                'orderby'        => 'date', // Order by date
+                                'order'          => 'ASC',
                             );
 
                             $services_query = new WP_Query($args);

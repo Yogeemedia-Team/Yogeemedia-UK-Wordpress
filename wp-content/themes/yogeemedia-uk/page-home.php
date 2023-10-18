@@ -60,6 +60,8 @@ get_header();
                         $args = array(
                             'post_type' => 'service', // Assuming 'services' is the name of your custom post type
                             'posts_per_page' => 3,    // Show all posts
+                            'orderby'        => 'date', // Order by date
+                            'order'          => 'ASC',
                         );
 
                         $services_query = new WP_Query($args);
