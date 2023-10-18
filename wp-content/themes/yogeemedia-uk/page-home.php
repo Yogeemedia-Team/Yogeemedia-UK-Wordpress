@@ -11,10 +11,10 @@ get_header();
             <div class="col-lg-5">
                 <div class="fun-fact">
                     <div class="counter">
-                        <div class="timer" data-to="38" data-speed="2000">38</div>
-                        <div class="operator">K</div>
+                        <div class="timer" data-to="18" data-speed="2000">38</div>
+                        <div class="operator">+</div>
                     </div>
-                    <span class="medium">Completed Projects</span>
+                    <span class="medium">Years of Experience</span>
                 </div>
                 <div class="thumb">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/digital_girl.png" alt="Image Not Found">
@@ -144,7 +144,7 @@ get_header();
                     <div class="effect"></div>
                 </a>
             </div>
-            <h3>We’ve over <br> 28 Years of Experience</h3>
+            <h3>We’ve over <br> 18 Years of Experience</h3>
         </div>
     </div>
     <div class="container">

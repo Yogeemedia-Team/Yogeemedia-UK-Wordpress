@@ -35,7 +35,7 @@ get_header();
             <div class="row">
                 <div class="col-xl-7 col-lg-6">
                     <div class="about-style-one-thumb animate" data-animate="fadeInUp">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/1500x1000.png" alt="Image Not Found">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about.jpg" alt="Image Not Found">
                         <div class="fun-fact text-light animate" data-animate="fadeInDown" data-duration="1s">
                             <div class="counter">
                                 <div class="timer" data-to="38" data-speed="2000">38</div>
@@ -49,15 +49,14 @@ get_header();
                     <div class="about-style-one">
                         <h2 class="title mb-30">Why choose Yogee Media ?</h2>
                         <p>
-                            Proven Expertise: With over 18 years of experience, 
-                            we have a deep understanding of what works in the digital landscape.
+                        We're not your ordinary digital agency; we're a dynamic team of experts with a track record spanning over 18 years, hailing from various disciplines. Our mission is clear: to harness the power of cutting-edge technology while maintaining a strong sense of accountability to ensure your digital triumph.
                         </p>
                         <ul class="list-simple">
-                            <li>Diverse Experts</li>
-                            <li>Tech-Savvy</li>
-                            <li>Accountability</li>
-                            <li>Client-Focused</li> 
-                            <li>Client-Centric Approac</li>     
+                            <li>Proven Expertise</li>
+                            <li>Tailored Solutions</li>
+                            <li>Mobile-Friendly Focus</li>
+                            <li>SEO Mastery</li> 
+                            <li>Client-Centric Approach</li>     
                         </ul>
                         <a href="about" class="arrow-btn"><i class="fas fa-arrow-right"></i></a>
                     </div>
